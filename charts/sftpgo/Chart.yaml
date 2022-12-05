@@ -1,10 +1,11 @@
 apiVersion: v2
 type: application
 name: sftpgo
-version: 0.13.4
-appVersion: 2.3.4
-kubeVersion: ">=1.16.0-0"
-description: Fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support.
+version: 1.13.4
+appVersion: 2.1.2
+kubeVersion: '>=1.16.0-0'
+description: Fully featured and highly configurable SFTP server with optional FTP/S
+  and WebDAV support.
 keywords:
   - sftp
   - ftp
@@ -12,15 +13,16 @@ keywords:
 home: https://github.com/drakkan/sftpgo
 sources:
   - https://github.com/drakkan/sftpgo
+  - https://github.com/bdashrad/helm-charts
   - https://github.com/sagikazarmark/helm-charts/tree/master/charts/sftpgo
 maintainers:
-  - name: sagikazarmark
-    email: mark.sagikazar@gmail.com
-    url: https://sagikazarmark.hu
+  - name: bdashrad
+    email: bdashrad@gmail.com
+    url: https://bdashrad.com
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Updated sftpgo to 2.3.4
+    - kind: added
+      description: Support for topology spread constraints
   artifacthub.io/images: |
     - name: sftpgo
       image: ghcr.io/drakkan/sftpgo:v2.3.4
